@@ -3,17 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+//import { ActionBarComponent } from './shared/ui/action-bar/action-bar.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+   // ActionBarComponent
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

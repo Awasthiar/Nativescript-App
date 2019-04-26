@@ -1,2 +1,7 @@
- 
 @import '~nativescript-theme-core/css/core.light.css';
+
+
+ActionBar {
+  background-color:rgb(235, 231, 231);
+  color:black;
+}

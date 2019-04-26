@@ -1,0 +1,15 @@
+<ActionBar title="Teams">
+    <ActionItem><Label class="activity" horizontalAlignment="left" text="Logout" color="rgb(38, 133, 243)" (tap)="logout()"></Label></ActionItem>
+    <ActionItem><Label class="activity" text="Add Team" color="rgb(38, 133, 243)" (tap)="addRecord()"></Label></ActionItem>
+   </ActionBar>
+<GridLayout>
+    <RadListView [items]="teamList" class="list-group">
+    <ng-template  let-item="item">
+        <StackLayout class="list-group-item" orientation="horizontal">
+            <Label [text]=" item.team_name" (tap)= "editRecord()" horizontalAlignment="left" style="margin:15" ></Label>
+            <Label [text]=" item.amount" horizontalAlignment="center" style="margin:15" ></Label>
+            <Label class="activity" text="Delete Team" color="rgb(38, 133, 243)" style="margin:10" horizontalAlignment="right" (tap)="displayConfirmDialog()"></Label>
+        </StackLayout>
+    </ng-template>
+   </RadListView>
+</GridLayout> 
